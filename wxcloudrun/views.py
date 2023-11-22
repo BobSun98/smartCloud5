@@ -14,6 +14,9 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/api/test', methods=['POST'])
+def count():
+    return make_succ_response("123")
 @app.route('/api/count', methods=['POST'])
 def count():
     """
